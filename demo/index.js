@@ -1,19 +1,19 @@
-import headful from '../src/headful';
+import headful from '../dist/headful';
 
 document.addEventListener('DOMContentLoaded', function () {
     headful({
-        title: 'Headful title',
-        description: 'Headful description',
-        keywords: ['example', 'head', 'javascript'],
-        image: 'http://example.com/preview.png',
-        lang: 'en-US',
-        url: 'http://localhost:4000/',
-        html: {
-            body: {id: 'aPageId', 'data-remove-me': undefined},
-            h1: {'data-foo': 'bar'},
+        "title": 'Headful title',
+        "description": 'Headful description',
+        "keywords": ['example', 'head', 'javascript'],
+        "image": 'http://example.com/preview.png',
+        "lang": 'en-US',
+        "url": 'http://localhost:4000/',
+        "html": {
+            "body": {id: 'aPageId', 'data-remove-me': undefined},
+            "h1": {'data-foo': 'bar'},
         },
-        head: {
-            'meta[charset]': {charset: 'utf-8'},
+        "head": {
+            'meta[charset]': {"charset": 'utf-8'},
         },
     }, {debug: true});
 });

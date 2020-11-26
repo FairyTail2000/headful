@@ -24,7 +24,7 @@
   "scripts": {
     "dev": "(cd demo; poi)",
     "test": "ava",
-    "build": "babel src/ --presets babel-preset-env --out-dir dist/",
+    "build": "tsc",
     "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {},
@@ -33,7 +33,8 @@
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
     "jsdom": "11.7.0",
-    "poi": "9.6.13"
+    "poi": "9.6.13",
+    "typescript": "^4.1.2"
   },
   "ava": {
     "files": [
